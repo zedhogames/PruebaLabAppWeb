@@ -1,0 +1,83 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Estilos para el botón de cierre (la "x") */
+.close {
+    position: absolute;
+    top: 10px; /* Ajusta según sea necesario */
+    right: 10px; /* Ajusta según sea necesario */
+    cursor: pointer;
+    color: #aaa;
+    font-size: 30px
+}
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.card {
+    height: 100%; /* Establecer una altura fija para las tarjetas */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /*wHace que el cuerpo de la tarjeta crezca para ocupar el espacio disponible/*
+    overflow: hidden; /*wOculta el exceso de contenido que no cabe en la tarjeta /*
+    text-overflow: ellipsis; /*wAgrega puntos suspensivos para indicar que el texto se ha truncado /*
+    /*white-space: nowrap; /* Evita que el texto se ajuste automáticamente */
+}
+
+
+
+/* TAmanio de imgs */
+.card-img-top {
+    width: 100%;
+    height: 70%; /* Esto mantendrá la proporción de la imagen (en auto) */
+}
+
+
+
