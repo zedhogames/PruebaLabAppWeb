@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(`https://fakestoreapi.com/products/${productId}`)
         .then(response => response.json())
         .then(product => {
+            console.log(product);
             const modalContent = document.getElementById('modalContent');
             modalContent.innerHTML = `
                 <img src="${product.image}" class="img-fluid mb-3" alt="${product.title}">
