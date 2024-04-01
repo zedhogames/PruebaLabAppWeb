@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Generar HTML de la tarjeta de producto
                 productCardsHTML += `
                     <div class="col-md-4">
-                    <div class="card mb-4 d-flex align-items-center justify-content-center">
+                    <div class="card mb-4 d-flex align-items-center justify-content-center border-card">
                             <img src="${product.image}" class="card-img-top" alt="${product.title}">
                             <div class="card-body">
                                 <h5 class="card-title">${product.title}</h5>

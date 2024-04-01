@@ -1,21 +1,20 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
 
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Rubik', sans-serif; 
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
-/* Estilos para el modal */
 .modal {
     display: none;
     position: fixed;
@@ -28,7 +27,6 @@ p {
     background-color: rgba(0,0,0,0.4);
 }
 
-/* Estilos para el contenido del modal */
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
@@ -37,18 +35,30 @@ p {
     width: 80%;
     max-width: 600px;
     position: relative;
+    overflow-y: auto; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
 }
 
-/* Estilos para el botón de cierre (la "x") */
+.modal-content img {
+    width: 30%;
+    height: 30%;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
 .close {
     position: absolute;
-    top: 10px; /* Ajusta según sea necesario */
-    right: 10px; /* Ajusta según sea necesario */
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     color: #aaa;
     font-size: 30px
 }
-
 
 .close:hover,
 .close:focus {
@@ -57,32 +67,24 @@ p {
     cursor: pointer;
 }
 
-
 .card {
-    height: 100%; /* Establecer una altura fija para las tarjetas */
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.card-body {
-    flex-grow: 1; 
-}
-
-
-
-/* TAmanio de imgs */
 .card-img-top {
     width: 200px;
-    height: 200px; /* Esto mantendrá la proporción de la imagen (en auto) */
+    height: 200px;
     display: flex;
     margin-top: 100px;
 }
 
-/* Para ajustar el margin entre el titulo y el btn */
 .view-details {
     margin-top: 50px;
-    font-size: 1.25rem; /* Ajusta el tamaño del texto del botón */
-    padding: 10px 20px; /* Ajusta el padding del botón */
+    font-size: 1.25rem;
+    padding: 10px 20px; 
+    border-radius: 8px;
 }
 
 .card-body {
@@ -93,20 +95,20 @@ p {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color: #cae3f5;
-    color: #1780f0;
+    background-color: #168eca;
+    color: #deecf4;
     margin-top: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 8px;
 }
 
 .details-btn:hover {
-    background-color: #b3d9f2;
+    background-color: #3685B5;
 }
 
-
 footer {
-    background-color: #101111;
+    background-color: #061826;
     color: #deecf4;
     padding: 20px 0;
     text-align: center;
@@ -122,8 +124,26 @@ footer {
     height: 100%;
 }
 
-
 .text-footer {
     color: #deecf4; 
 }
 
+nav{
+    background-color: #061826;
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-brand{
+    color: #deecf4;
+}
+
+.border-card {
+    border: 1px solid #89aae6;
+}
+
+.card-title {
+    font-size: 16px;
+}
