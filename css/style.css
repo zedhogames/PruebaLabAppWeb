@@ -3,7 +3,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+
 }
 
 h1, h2, h3 {
@@ -24,7 +25,6 @@ p {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -65,19 +65,65 @@ p {
 }
 
 .card-body {
-    flex-grow: 1; /*wHace que el cuerpo de la tarjeta crezca para ocupar el espacio disponible/*
-    overflow: hidden; /*wOculta el exceso de contenido que no cabe en la tarjeta /*
-    text-overflow: ellipsis; /*wAgrega puntos suspensivos para indicar que el texto se ha truncado /*
-    /*white-space: nowrap; /* Evita que el texto se ajuste automáticamente */
+    flex-grow: 1; 
 }
 
 
 
 /* TAmanio de imgs */
 .card-img-top {
-    width: 100%;
-    height: 70%; /* Esto mantendrá la proporción de la imagen (en auto) */
+    width: 200px;
+    height: 200px; /* Esto mantendrá la proporción de la imagen (en auto) */
+    display: flex;
+    margin-top: 100px;
+}
+
+/* Para ajustar el margin entre el titulo y el btn */
+.view-details {
+    margin-top: 50px;
+    font-size: 1.25rem; /* Ajusta el tamaño del texto del botón */
+    padding: 10px 20px; /* Ajusta el padding del botón */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.details-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #cae3f5;
+    color: #1780f0;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #b3d9f2;
 }
 
 
+footer {
+    background-color: #101111;
+    color: #deecf4;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.text-footer {
+    color: #deecf4; 
+}
 
