@@ -9,13 +9,13 @@ function addToCart(id)
                 });
 };
 
-//Botón finalizar compra/limpiar carrito
+//Boton finalizar compra/limpiar carrito
 function clearCart()
 {
     localStorage.clear();
 };
 
-//Botón sumar cantidad
+//Boton sumar cantidad
 function addQuantity(id)
 {
     let item = JSON.parse(localStorage.getItem(id));
@@ -23,7 +23,7 @@ function addQuantity(id)
     localStorage.setItem(id, JSON.stringify(item));
 }
 
-//Botón restar cantidad
+//Boton restar cantidad
 function removeQuantity(id)
 {
     let item = JSON.parse(localStorage.getItem(id));
@@ -31,7 +31,7 @@ function removeQuantity(id)
     localStorage.setItem(id, JSON.stringify(item));
 }
 
-//Botón eliminar articulo
+//Boton eliminar articulo
 function removeFromCart(id)
 {
     localStorage.removeItem(id);
