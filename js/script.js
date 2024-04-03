@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const detailButtons = document.querySelectorAll('.view-details');
             detailButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    const productId = button.getAttribute('data-product-id');
+                    const productId = button.getAttribute('data-product-id');                    
                     showProductDetails(productId);
                 });
             });

@@ -79,5 +79,62 @@ p {
     height: 70%; /* Esto mantendrá la proporción de la imagen (en auto) */
 }
 
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #262d4e;
+    background-color: #b4abab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;    
+}
+
+
+.modal-header {
+    display: flex;    
+    justify-content: space-around;
+    background-color: #5f5d5d;
+    color: #ffffff;
+    width: 100%;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img{
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.delete-product{
+    cursor: pointer;
+}
 
 
